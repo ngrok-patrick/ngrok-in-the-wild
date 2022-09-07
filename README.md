@@ -11,8 +11,9 @@ ngrok --authtoken 6hwx4fgzL64i39E1YrbwL_7N3gm4wWub5a59twoXb7x http 80
 ```
 
 ### Where is my Config File:
-
-On Macos it should be here: /Users/pm/.ngrok2/ngrok.yml
+    Linux: `~/.config/ngrok/ngrok.yml`
+    MacOS (Darwin): `~/Library/Application Support/ngrok/ngrok.yml`
+    Windows: `%HOMEPATH%\AppData\Local\ngrok\ngrok.yml`
 ```
 ngrok config check
 ```
