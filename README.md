@@ -1,7 +1,12 @@
 # Ngrok-in-the-wild
 Examples of Ngrok being used
 
-### Allow only Your IP:
+### Ngrok Runtime Variables:
+<sup>Ngrok has Environment Variables that can be access and use at Run-time. This is an example of fetching **${.http.request.url.host}** from Ngrok and rewriting it into the X-Original-Host Header. **(neato)**
+```
+ngrok http --host-header rewrite --request-header-add ‘X-Original-Host:${.http.request.url.host}’ --hostname exo.eu.ngrok.io 3003
+```
+### Allow only Your IP Address:
 ```
 ngrok http 8080 --cidr-allow $(curl http://ifconfig.me/ip)/32
 ```
