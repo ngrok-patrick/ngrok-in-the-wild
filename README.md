@@ -31,9 +31,7 @@ ngrok tcp 3389
 ### MacOs Remote Desktop:
 ```
 ngrok tcp 3389
-```
-    
-patrick@ngrok
+```    
 
 ### Share file on Macos:
 ```
@@ -45,3 +43,4 @@ ngrok http "file:////tmp/php"
 ngrok http https://companyx.okta.com --host-header rewrite --subdomain companyx
 ```
 
+Patrick at Ngrok
