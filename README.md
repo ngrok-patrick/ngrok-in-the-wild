@@ -10,6 +10,10 @@ ngrok http --host-header rewrite --request-header-add ‘X-Original-Host:${.http
 ```
 ngrok http 8080 --cidr-allow $(curl http://ifconfig.me/ip)/32
 ```
+### Specify alternative Config file:
+```
+ngrok start --config=ngrok-phpws.yml phpwebservices
+```
 ### Specify Authtoken:
 ```
 ngrok --authtoken 6hwx4fgzL64i39E1YrbwL_7N3gm4wWub5a59twoXb7x http 80
