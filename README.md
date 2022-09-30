@@ -41,6 +41,10 @@ ngrok tcp 3389
 ```
 ngrok http "file:////tmp/php" 
 ```
+### Share file Linux with Basic Authentication
+```
+./ngrok http "file:////tmp" --basic-auth="user:Password1!"
+```
 
 ### Monitor Rest requests to Cloud Service
 ```
