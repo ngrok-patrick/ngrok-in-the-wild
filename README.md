@@ -51,4 +51,8 @@ ngrok http "file:////tmp/php"
 ngrok http https://companyx.okta.com --host-header rewrite --subdomain companyx
 ```
 
-Patrick at Ngrok
+### Simple example of using ngrok CLI with OIDC
+
+```
+ngrok http 80 --oidc https://companyx.okta.com  --oidc-client-id 0oa1q3k3t8ohIF9BZ1d8  --oidc-client-secret xnjEWp-LCfPSX8yJdQ4_YYLEB7YHZ2ZiKkZU1xgItY-EQwo0p6_WnpvzZA4kbrC
+```
